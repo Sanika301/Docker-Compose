@@ -1,0 +1,11 @@
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* time to display the alert */
+    transition: top 0.5s;
+}
