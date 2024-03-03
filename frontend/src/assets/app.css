@@ -14,7 +14,7 @@ html {
   }
 
   .container {
-    background: linear-gradient(#141e30, #243b55);
+    background: #342d56;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@ html {
     left: 50%;
     width: 400px;
     padding: 40px;
-    background: rgba(0,0,0,.5);
+    background: #e7c098;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -40,7 +40,7 @@ html {
   .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: #41416f;
     text-align: center;
   }
   
@@ -52,10 +52,10 @@ html {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #25253f;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #342d56;
     outline: none;
     background-color: transparent;
 
@@ -66,7 +66,7 @@ html {
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: #342d56;
     pointer-events: none;
     transition: .5s;
   }
@@ -76,7 +76,7 @@ html {
     .login-box .user-box input:valid ~ label {
       top: -20px;
       left: 0;
-      color: #03e9f4;
+      color: #342d56;
       font-size: 12px;
     }
   
@@ -84,7 +84,7 @@ html {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #03e9f4;
+    color: #e7c098;
     background-color: #141e30;
     border: none;
     font-size: 16px;
@@ -97,13 +97,13 @@ html {
   }
   
   .login-box button:hover {
-    background: #03e9f4;
+    background: #342d56;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #342d56,
+                0 0 25px #342d56,
+                0 0 50px #342d56,
+                0 0 100px #342d56;
   }
   
   .login-box button span {
@@ -116,7 +116,7 @@ html {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
+    background: linear-gradient(90deg, transparent, #342d56);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -134,7 +134,7 @@ html {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #342d56);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -153,7 +153,7 @@ html {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, #342d56);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -172,7 +172,7 @@ html {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #342d56);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }
@@ -190,7 +190,7 @@ html {
     left: 50%;
     width: 400px;
     padding: 20px 40px 40px 40px;
-    background: #0d141e;
+    background: #e7c098;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -201,14 +201,14 @@ html {
   }
   .card {
     background: transparent;
-    color: #439498;    
+    color: #342d56;    
   }
 
   .card button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #c52626;
+    color: #e7c098;
     background-color: #141e30;
     border: none;
     font-size: 16px;
@@ -221,12 +221,12 @@ html {
 
   .card button:hover {
     background: #c52626;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #c52626,
-                0 0 25px #c52626,
-                0 0 50px #c52626,
-                0 0 100px #c52626;
+    color: #e7c098;
+    border-radius: 1px;
+    box-shadow: 0 0 1px #c52626,
+                0 0 5px #c52626,
+                0 0 10px #c52626,
+                0 0 20px #c52626;
   }
 
   .alert {
