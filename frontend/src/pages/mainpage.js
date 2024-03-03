@@ -51,7 +51,7 @@ export default function Mainpage() {
   return (
     <div className='container'>
       <div className='login-box'>
-        <h2>Create User</h2>
+        <h2>Task Manager</h2>
         <div className='user-box'>
           <input
             type="text"
@@ -59,7 +59,7 @@ export default function Mainpage() {
             value={name}
             required
             onChange={(e) => setName(e.target.value)} />
-          <label>Name</label>
+          <label>Task</label>
         </div>
         <div className='user-box'>
           <input
@@ -68,14 +68,14 @@ export default function Mainpage() {
             value={email}
             required
             onChange={(e) => setEmail(e.target.value)} />
-          <label>Email</label>
+          <label>Description</label>
         </div>
         <button type="submit" onClick={Submit}>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-          Submit
+          Add Task
         </button>
       </div>
       <div>
@@ -84,12 +84,12 @@ export default function Mainpage() {
             <div className='card'>
               <div>
                 <div>
-                  <p><b>Name: </b>{item.name}</p>
-                  <p><b>Email: </b>{item.email}</p>
+                  <p><b>Task: </b>{item.name}</p>
+                  <p><b>Task Description: </b>{item.email}</p>
                 </div>
               </div>
               <button type="submit" onClick={() => Delete(item._id)}>
-                Delete
+                Task Done
               </button>
             </div>
           </div>
