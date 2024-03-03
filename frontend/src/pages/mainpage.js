@@ -3,16 +3,16 @@ import axios from 'axios'
 import "../assets/app.css"
 
 export default function Mainpage() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [task, setName] = useState('')
+  const [description, setEmail] = useState('')
   const [data, setData] = useState([])
   const Submit = async () => {
     try {
-      if (name === '' || email === '') {
+      if (task === '' || description === '') {
         alert('Please fill all the fields')
       }
       else {
-        const body = { name, email }
+        const body = { task, description }
         await axios.post('http://localhost:5000/insert', body);
         setName('');
         setEmail('');
@@ -56,7 +56,7 @@ export default function Mainpage() {
           <input
             type="text"
             name="USENAME"
-            value={name}
+            value={task}
             required
             onChange={(e) => setName(e.target.value)} />
           <label>Task</label>
@@ -65,7 +65,7 @@ export default function Mainpage() {
           <input
             type="text"
             name="EMAIL"
-            value={email}
+            value={description}
             required
             onChange={(e) => setEmail(e.target.value)} />
           <label>Description</label>
@@ -84,8 +84,8 @@ export default function Mainpage() {
             <div className='card'>
               <div>
                 <div>
-                  <p><b>Task: </b>{item.name}</p>
-                  <p><b>Task Description: </b>{item.email}</p>
+                  <p><b>Task: </b>{item.task}</p>
+                  <p><b>Task Description: </b>{item.description}</p>
                 </div>
               </div>
               <button type="submit" onClick={() => Delete(item._id)}>
