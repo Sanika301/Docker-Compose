@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  wlug_backend:
+    image: node    
+    working_dir: /backend-c
+    container_name: backend
+    volumes:
+      - ./backend:/backend-c
+    ports:
+      - 5000:5000
+    depends_on:
+      - db
+    command: bash -c "npm install && npm start"
+
+  wlug_frontend:
+    image: node
+    working_dir: /frontend-c
+    container_name: frontend
+    volumes:
+      - ./frontend:/frontend-c
+    ports:
+      - 3000:3000
+    depends_on:
+      - wlug_backend
+    command: bash -c "npm install && npm start"
+
+  db:
+    image: mongo
+
+
+   
